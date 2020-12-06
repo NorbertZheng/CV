@@ -1,0 +1,104 @@
+\documentclass{resume}
+\usepackage{setspace}
+\renewcommand{\baselinestretch}{0.9}
+\begin{document}
+
+\name{\textbf{\href{https://github.com/Fassial}{郑晖}}}
+    
+\contactinfo{Phone: +86 137-9231-\label{key}5475}{Email: \href{mailto:zhenghui\_cs@whu.edu.cn}{zhenghui\_cs@whu.edu.cn}}{}{}
+
+\section{{\bfseries 研究兴趣}}
+\begin{itemize}[parsep=0.2ex]
+\item \textbf{神经科学}: 计算神经科学；神经环路机制
+\item \textbf{体系结构}: 异构计算；类脑计算
+\end{itemize}
+
+\section{{\bfseries 教育经历}}
+\datedsubsection{{\bfseries 武汉大学}}{荣誉学士，弘毅学堂，计算机科学与技术}{2017 年 9 月 - }
+\begin{itemize}[parsep=0.1ex]
+	\item \textbf{GPA}: 3.84/4.00  \textbf{专业排名}: 2/32
+	\item \textbf{导师}: 刘树波教授
+	\item \textbf{交换经历}: 加州大学伯克利分校访问(2019年暑假)
+	\item \textbf{核心课程}: 编译原理(99)、算法设计与分析(97)、计算机组成与设计(96)、微积分(98)、线性代数(98)、离散数学(96)等
+\end{itemize}
+
+\section{{\bfseries 科研经历}}
+\datedsubsection{{\bfseries 武汉大学}}{}{2020 年 2 月 - 2020 年 4 月}
+\begin{itemize}[parsep=0.2ex]
+	\item 导师: 艾浩军副教授
+	\item 研究\textbf{空中手写的迁移学习}相关问题\footnote{https://github.com/Fassial/Air-Writing-with-TL}，\textbf{论文(共同一作)已被ICPR2020接收}。
+	\item 针对空中手写字符识别问题，提出一种能够在不同人之间进行迁移从而具备较好个性化识别性能的系统。
+	\item 针对不同空中手写字符数据集获取困难、数据量较小的特点，将一种基于统计的迁移算法运用于深度神经网络，使得在需要的训练数据大大减少的情况下，系统的性能能够得到较大的提升。
+\end{itemize}
+\datedsubsection{{\bfseries 武汉大学}}{}{2019 年 9 月 - 2020 年 8 月 }
+\begin{itemize}[parsep=0.2ex]
+    \item 导师: 刘树波教授
+    \item 研究计算机体系结构及物联网应用。
+    \item 参与其组下的手环开发项目\footnote{湖北省技术创新专项（重大项目），课题编号：CXZD2018000035，面向健康服务的体域网安全与隐私保护研究}，负责该项目手环端信息加密部分。
+    \item 在刘树波教授和蔡朝晖副教授指导下，进行\textbf{超标量处理器架构}方面的研究\footnote{https://github.com/trifling-mips}。
+\end{itemize}
+\datedsubsection{{\bfseries 清华大学}}{}{2020 年 5 月 - 2020 年 9 月}
+\begin{itemize}[parsep=0.2ex]
+    \item 导师: 刘斌教授
+    \item 跟从清华大学计算机系刘斌老师进行\textbf{计算机网络}方面的科研训练。
+    \item 我跟从学长研究车联网中自动驾驶的实时处理问题，我们尝试将神经网络提取到的feature进行编码作为key在TCAM中查找对应的result，从而尽量避免计算的冗余，降低计算节点的计算压力，保证数据处理的实时性。论文已被INFOCOM2021接收。我在其中主要负责FPGA端系统的功能实现与性能测试\footnote{https://github.com/Fassial/Alveo-CiM}。
+\end{itemize}
+
+\section{{\bfseries 项目经历}}
+\datedsubsection{{\bfseries 基于深度学习的空中手写数字识别}}{比赛队长}{2019 年 10 月 - 2019 年 12 月}
+\begin{itemize}[parsep=0.2ex]
+	\item \textbf{全国第三届FPGA创新设计大赛}  \textbf{国家二等奖}
+	\item 该项目\footnote{https://github.com/Fassial/NUFIC2019-WHU}使用FPGA对加速度传感器收集到的数据进行预处理，之后使用深度神经网络进行数字的预测。
+	\item 本人主要负责系统的搭建，包括FPGA端的数据预处理电路设计、FPGA与Arm核的数据传输和网络模型的硬件端部署。
+\end{itemize}
+\datedsubsection{{\bfseries 双发射顺序MIPS-CPU}}{比赛项目}{2020 年 3 月 - 2020 年 8 月 }
+\begin{itemize}[parsep=0.2ex]
+	\item 该项目系参加\textbf{“龙芯杯”}的比赛作品。
+	\item 该项目\footnote{https://github.com/trifling-mips}计划实现mips指令集中支持启动linux内核所必备的所有指令，在此基础上搭建SoC，启动linux最新版内核和图形化界面，并编写运行武汉大学彭智勇教授提出的对象代理数据库。
+	\item 该项目目前已实现cache部分设计，并行化TLB与cache，并依据icache和dcache的特性为其分别添加了prefetch、victim\_cache等模块，接受参数配置，进行了详尽的功能性测试和性能测试。目前版本可在“龙芯杯”性能测试上达到20分。
+\end{itemize}
+\datedsubsection{{\bfseries Lcore}}{比赛项目}{2019 年 8 月 - 2019 年 9 月}
+\begin{itemize}[parsep=0.2ex]
+	\item 该项目\footnote{https://github.com/Fassial/Lcore}系2019年参加\textbf{第三届“龙芯杯”}准备的软件端作品。
+	\item 该项目是一个比较简易的操作系统，运行在MIPS-CPU之上，支持基本的进程切换、内存管理和shell交互等。
+\end{itemize}
+\datedsubsection{{\bfseries 安卓端对象代理数据库设计}}{实验室项目}{2020 年 1 月 - 2020 年 8 月 }
+\begin{itemize}[parsep=0.2ex]
+	\item 该项目系武汉大学彭智勇教授实验室下的一个项目，我主要在其中和学长一块负责\textbf{安卓端totem的存储管理}部分。
+	\item 在参与此项目的同时，本人自己实现了一个完整的简易版电脑端totem\footnote{https://github.com/Fassial/ODDB-Lab}，支持对象代理数据库的一些基本语句。
+\end{itemize}
+\datedsubsection{{\bfseries 武汉大学弘毅学堂学生管理系统}}{学生会项目}{2018 年 9 月 - 2018 年 10 月}
+\begin{itemize}[parsep=0.2ex]
+\item 该项目\footnote{https://github.com/Fassial/HYhu}系武汉大学弘毅学堂的学生管理系统，主要用于帮助学生会组织活动、发布信息、预约活动室等。
+\end{itemize}
+
+\section{{\bfseries 奖项和荣誉}}
+\begin{itemize}[parsep=0.2ex]
+	\item 海外交流奖学金，武汉大学，2019 - 2020
+	\item 武汉大学三好学生，武汉大学，2019 - 2020
+	\item 弘毅学堂甲等学业奖学金，武汉大学弘毅学堂，2019 - 2020
+	\item 武汉大学甲等奖学金，武汉大学，2019 - 2020
+	\item 武汉大学国家奖学金，武汉大学，2019 - 2020
+	\item 新生奖学金，武汉大学，2017
+\end{itemize}
+
+\section{{\bfseries 论文}}
+\begin{itemize}[parsep=0.2ex]
+	\item \{Yunzhe Li, \textbf{Hui Zheng}, He Zhu\}, Haojun Ai and Xiaowei Dong. "Cross-People Mobile-Phone Based Airwriting Character Recognition". ICPR2020 Accepted.
+	\item Wenquan Xu, Haoyu Song, Linyang Hou, \textbf{Hui Zheng}, Xinggong Zhang, Chuwen Zhang, Wei Hu, Yi Wang, Bin Liu. "SODA: Similar 3D Object Detection Accelerator at Network Edge for Autonomous Driving". INFOCOM2021 Accepted.
+\end{itemize}
+
+\section{{\bfseries 专业技能}}
+\begin{itemize}[parsep=0.2ex]
+	\item \textbf{编程语言}: 熟悉systemVerilog、C、python、R、java、LaTex等语言，了解chisel、rust、javascript、matlab等语言
+	\item \textbf{开发框架}: 熟悉pytorch、tensorflow深度学习框架，了解vue等前端开发框架
+\end{itemize}
+
+\section{{\bfseries 其他信息}}
+\begin{itemize}[parsep=0.2ex]
+	\item \textbf{英语水平}: CET-4 538、CET-6 533
+	\item \textbf{社团任职}: 武汉大学微软俱乐部副主席、武汉大学弘毅学堂网络技术部部长等
+	\item \textbf{Github}: \href{https://github.com/Fassial}{https://github.com/Fassial}
+\end{itemize}
+
+\end{document}
