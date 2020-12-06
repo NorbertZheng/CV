@@ -1,0 +1,8 @@
+# dir
+
+# file
+*.aux
+*.log
+*.out
+*.synctex.gz
+
