@@ -1,6 +1,6 @@
 \ProvidesClass{resume}
 
-\LoadClass[12pt, UTF8, AutoFakeBold]{ctexart}
+\LoadClass[10pt, UTF8, AutoFakeBold]{ctexart}
 
 \RequirePackage{xifthen}
 \RequirePackage{fancyhdr}
@@ -28,7 +28,7 @@
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyfoot[L]{\small 最近更新: \today}
+% \fancyfoot[L]{\small Last Update: \today}
 \renewcommand{\headrulewidth}{0pt}
 
 
