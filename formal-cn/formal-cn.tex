@@ -1,20 +1,28 @@
 \documentclass{resume}
 \usepackage{setspace}
-\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\baselinestretch}{0.8}
 \begin{document}
 
 \name{\textbf{\href{https://fassial.github.io}{郑晖}}}
     
-\contactinfo{Phone: +86 137-9231-5475}{Email: \href{mailto:fassial19991217@gmail.com}{fassial19991217@gmail.com}}{}{}
+\contactinfo{
+  Phone: +86 137-9231-5475}{Email: \href{mailto:fassial19991217@gmail.com}{fassial19991217@gmail.com}\\
+  \href{https://fassial.github.io}{https://fassial.github.io}
+}{}{}
 
 \section{{\bfseries 研究兴趣}}
 \begin{itemize}[parsep=0.2ex]
-\item \textbf{神经科学}：计算神经科学；类脑计算
+\item \textbf{神经科学}：计算神经科学；机器学习；脑机接口
 \end{itemize}
 
 \section{{\bfseries 教育经历}}
+\datedsubsection{{\bfseries 北京大学}}{}{北京，中国}
+\datedsubsection{}{博士，生物学，前沿交叉学科研究院}{2021 年 9 月 - 2026 年 6 月（expected）}
+\begin{itemize}[parsep=0.1ex]
+    \item \textbf{导师}：柳昀哲
+\end{itemize}
 \datedsubsection{{\bfseries 武汉大学}}{}{武汉，中国}
-\datedsubsection{}{学士，计算机科学与技术，弘毅学堂}{2017 年 9 月 - 2021 年 6 月（expected）}
+\datedsubsection{}{学士，计算机科学与技术，弘毅学堂}{2017 年 9 月 - 2021 年 6 月}
 \begin{itemize}[parsep=0.1ex]
     \item \textbf{GPA}：3.84/4.00（92.1/100）
     \item \textbf{专业排名}：2/32（从武汉大学计算机学院的363名学生中选拔出来）
@@ -29,10 +37,38 @@
 
 %% research experience
 \section{{\bfseries 科研经历}}
+% pku-yunzhe liu
+\datedsubsection{\textbf{A Naive Machine Learning Model to Decode Speak from sEEG signals}，科研实习}{}{}
+\datedsubsection{}{前沿交叉学科研究院，北京大学}{}
+\datedsubsection{}{导师：\href{https://cibr.ac.cn/science/team/detail/763?language=cn}{柳昀哲教授}}{2023 年 1 月至今}
+\begin{itemize}[parsep=0.2ex]
+    \item 研究sEEG-speak范式的解码问题。
+    \item 构建一个简单的机器学习模型，从 sEEG 信号中解码句子。
+\end{itemize}
+% pku-yunzhe liu
+\datedsubsection{\textbf{A Contrastive Learning model to Decode Sleep from EEG signals}，科研实习}{}{}
+\datedsubsection{}{前沿交叉学科研究院，北京大学}{}
+\datedsubsection{}{导师：\href{https://cibr.ac.cn/science/team/detail/763?language=cn}{柳昀哲教授}}{2023 年 1 月至今}
+\begin{itemize}[parsep=0.2ex]
+    \item 研究TMR（目标记忆重新激活）范式下脑电睡眠的解码问题。
+    \item 建立一个对比学习模型，利用约 60 名受试者的清醒和睡眠数据，从脑电图信号中解码睡眠，为认知神经科学实验提供工具。
+\end{itemize}
+% pku-yunzhe liu
+\datedsubsection{\textbf{A Neural Network Model based on Tolman-Eichenbaum Machine to explain Human Replay}，科研实习}{}{}
+\datedsubsection{}{前沿交叉学科研究院，北京大学}{}
+\datedsubsection{}{导师：\href{https://cibr.ac.cn/science/team/detail/763?language=cn}{柳昀哲教授}}{2022 年 1 月至今}
+\begin{itemize}[parsep=0.2ex]
+    \item 研究重播对于记忆巩固的作用。
+    \item 建造一个模型来解释在人类和啮齿动物中观察到的神经重放现象。
+\end{itemize}
 % pku-si wu
 \datedsubsection{\textbf{A Neural Network Model with Gap Junction for Global Feature Extraction}，科研实习}{}{}
 \datedsubsection{}{前沿交叉学科研究院，北京大学}{}
-\datedsubsection{}{导师：\href{http://www.aais.pku.edu.cn/duiwu/showproduct.php?id=208}{吴思教授}}{2021 年 3 月至今}
+\datedsubsection{}{导师：\href{http://www.aais.pku.edu.cn/duiwu/showproduct.php?id=208}{吴思教授}}{2021 年 3 月 - 2021 年 8 月}
+\begin{itemize}[parsep=0.2ex]
+    \item 研究人类大脑中视觉通路全局到局部的信息处理。
+    \item 分析了间隙连接神经网络模型的动力学。
+\end{itemize}
 % nibs-minmin luo
 \datedsubsection{\textbf{Single-Cell Transcriptomics to uncover the Relationships between Inflammation and Hormone in Pituitary Cells}，科研实习}{}{}
 \datedsubsection{}{北京生命科学研究所，中国}{}
@@ -116,7 +152,7 @@
 %% skills
 \section{{\bfseries 技能}}
 \begin{itemize}[parsep=0.2ex]
-    \item \textbf{编程语言}: systemVerilog, C, python, R, java, LaTex, javascript, matlab
+    \item \textbf{编程语言}: python, matlab, systemVerilog, C, R, java, LaTex, javascript
     \item \textbf{开发框架}: pytorch, tensorflow, vue
     \item \textbf{英语水平}: \textbf{CET-4} (538), \textbf{CET-6} (533)
 \end{itemize}
